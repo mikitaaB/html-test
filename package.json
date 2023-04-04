@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
-  "homepage": "https://mikitaab.github.io/html-task",
+  "homepage": "https://mikitaab.github.io/html-test",
   "type": "module",
   "dependencies": {
     "copy-webpack-plugin": "^11.0.0",
