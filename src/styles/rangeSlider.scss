@@ -1,0 +1,78 @@
+input[type=range].range-slider__slider {
+    height: 6px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+input[type=range].range-slider__slider:focus {
+    outline: none;
+}
+
+/*webkit*/
+input[type=range].range-slider__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 23.72px;
+    height: 23.72px;
+    border-radius: 1em;
+    background: $light_1;
+    border: 3px solid $light_3;
+    box-shadow: 0 0 2px $dark_4;
+    margin-top: calc(max((6px - 1px - 1px) * 0.5, 0px) - max(23.72px * 0.5, 3px));
+}
+
+input[type=range].range-slider__slider::-webkit-slider-runnable-track {
+    height: 6px;
+    border: 1px solid $white;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: none;
+}
+
+/*mozilla*/
+input[type=range].range-slider__slider::-moz-range-thumb {
+    width: max(calc(23.72px - 3px - 3px), 0px);
+    height: max(calc(23.72px - 3px - 3px), 0px);
+    border-radius: 1em;
+    background: $light_1;
+    border: 3px solid $light_3;
+    box-shadow: 0 0 2px $dark_4;
+}
+
+input[type=range].range-slider__slider::-moz-range-track {
+    height: max(calc(6px - 1px - 1px), 0px);
+    border: 1px solid $white;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: none;
+}
+
+/*ms*/
+input[type=range].range-slider__slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].range-slider__slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].range-slider__slider::-ms-thumb {
+    width: 23.72px;
+    height: 23.72px;
+    border-radius: 1em;
+    background: $light_1;
+    border: 3px solid $light_3;
+    box-shadow: 0 0 2px $dark_4;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+input[type=range].range-slider__slider::-ms-track {
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid $white;
+    box-shadow: none;
+    box-sizing: border-box;
+}

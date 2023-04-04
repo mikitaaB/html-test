@@ -1,0 +1,11 @@
+@function pxToRem($value) {
+    $remValue: calc($value / 16) + rem;
+    @return $remValue;
+}
+
+@function adaptiveFont($pcFontSize, $mobileFontSize) {
+    $addSize: $pcFontSize - $mobileFontSize;
+    $maxWidth: $maxWidth - 320;
+    $fontSize: calc(#{$mobileFontSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+    @return $fontSize;
+}

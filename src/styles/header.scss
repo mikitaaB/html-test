@@ -1,0 +1,85 @@
+.header {
+    background: $dark_0;
+    width: 100%;
+
+    &__fixed {
+        z-index: 2;
+        position: fixed;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        max-width: $pc;
+        min-height: pxToRem(100);
+        padding: 0 pxToRem(5);
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        @media (min-width: $tablet) {
+            justify-content: space-between;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        padding: 0;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: pxToRem(20);
+            align-items: center
+        }
+
+        @media (min-width: $tablet) {
+            gap: pxToRem(60);
+            justify-content: flex-end;
+        }
+    }
+
+    &__menu-link {
+        color: $white;
+        font-size: adaptiveFont(13, 12);
+        font-weight: 600;
+        line-height: pxToRem(16);
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 0em;
+
+        &_active {
+            color: $light_0;
+        }
+    }
+
+    &__menu-link:hover {
+        text-decoration: underline;
+    }
+
+    &__title {
+        font-family: Raleway;
+        font-size: adaptiveFont(28, 27);
+        font-weight: 800;
+        line-height: pxToRem(33);
+        text-align: left;
+        text-transform: uppercase;
+        color: $white;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @media (min-width: $tablet) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__title-highlight {
+        color: $light_1;
+    }
+}

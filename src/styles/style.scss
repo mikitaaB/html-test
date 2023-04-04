@@ -1,0 +1,48 @@
+@import "fonts";
+@import "variables";
+@import "functions";
+@import "select";
+@import "rangeSlider";
+
+$pc: pxToRem($pcWidth);
+$tablet: pxToRem($tabletWidth);
+$mobile: pxToRem($mobileWidth);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: $pc;
+    margin: 0 auto;
+}
+
+@import "header";
+@import "content";
+@import "footer";
