@@ -55,14 +55,14 @@
         &_primary {
             @extend .button;
             border: 1px solid $white;
-            background: $light_4;
+            background-color: $light_4;
             color: $white;
         }
 
         &_secondary {
             @extend .button;
             border: 1px solid $light_5;
-            background: $white;
+            background-color: $white;
             color: $light_5;
         }
 
@@ -125,7 +125,7 @@
 
 .booking {
     min-height: pxToRem(920);
-    background: $dark_3;
+    background-color: $dark_3;
     overflow: hidden;
     position: relative;
 
@@ -185,7 +185,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: $light_4;
+        background-color: $light_4;
         border: 5px solid $light_3;
         border-radius: 50%;
     }
@@ -241,7 +241,7 @@
     &__item {
         width: pxToRem(6);
         height: pxToRem(6);
-        background: $light_7;
+        background-color: $light_7;
         border-radius: 50%;
     }
 }
@@ -259,7 +259,7 @@
         flex-basis: pxToRem(370);
         margin: 0 auto;
         order: 1;
-        background: $light_4;
+        background-color: $light_4;
         color: $white;
         border: 1px solid $white;
         min-height: pxToRem(48);
@@ -277,7 +277,7 @@
     }
 
     &-input {
-        background: rgba(255, 255, 255, 0.85);
+        background-color: rgba(255, 255, 255, 0.85);
         border: 1px solid $white;
         border-radius: pxToRem(3);
         color: $dark_3;
@@ -340,7 +340,7 @@
         align-items: center;
         border: pxToRem(2) solid $light_4;
         border-radius: pxToRem(3);
-        background: $white;
+        background-color: $white;
         color: $dark_3;
         text-transform: uppercase;
         padding: pxToRem(12) pxToRem(35) pxToRem(12) pxToRem(10);
@@ -383,7 +383,7 @@
     outline: none;
 
     &__option {
-        background: $dark_3;
+        background-color: $dark_3;
         color: $white;
         line-height: pxToRem(34);
         letter-spacing: 0em;

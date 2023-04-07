@@ -4,18 +4,18 @@
     min-width: pxToRem(370);
 
     &[data-state="active"] {
-        background: $dark_1;
+        background-color: $dark_1;
         color: $white;
 
         .select-system__title {
             &::before {
                 transform: translate(-3px, -50%) rotate(-45deg);
-                background: $white;
+                background-color: $white;
             }
 
             &::after {
                 transform: translate(3px, -50%) rotate(45deg);
-                background: $white;
+                background-color: $white;
             }
         }
 
@@ -42,7 +42,7 @@
         display: block;
         width: pxToRem(10);
         height: pxToRem(2);
-        background: $dark_2;
+        background-color: $dark_2;
         transition: all 0.3s ease-out;
         transform: translate(-3px, -50%) rotate(45deg);
     }
@@ -59,7 +59,7 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - pxToRem(6));
-    background: $dark_3;
+    background-color: $dark_3;
     border: pxToRem(1) solid $dark_1;
     border-top: none;
     border-bottom-left-radius: pxToRem(3);
