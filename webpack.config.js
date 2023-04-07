@@ -85,16 +85,31 @@ const webpackConfig = {
         })
     ],
     optimization: {
+        minimize: true,
         minimizer: [
             new ImageMinimizerPlugin({
                 minimizer: {
-                    implementation: ImageMinimizerPlugin.imageminMinify,
+                    implementation: ImageMinimizerPlugin.imageminGenerate,
                     options: {
                         plugins: [
                             ['gifsicle', { interlaced: true }],
                             ['jpegtran', { progressive: true }],
                             ['optipng', { optimizationLevel: 5 }],
-                            ['svgo', { name: 'preset-default' }]
+                            [
+                                'svgo',
+                                {
+                                    plugins: [
+                                        'preset-default',
+                                        'prefixIds',
+                                        {
+                                            name: 'sortAttrs',
+                                            params: {
+                                                xmlnsOrder: 'alphabetical'
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
                         ]
                     }
                 }
