@@ -21,12 +21,13 @@
     "sass-loader": "^13.2.1",
     "svgo": "^3.0.2",
     "svgo-loader": "^4.0.0",
-    "webpack": "^5.76.2",
+    "webpack": "^5.80.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.1"
+    "webpack-dev-server": "^4.13.3"
   },
   "scripts": {
     "build": "webpack --mode development",
-    "start": "webpack-dev-server --open --config=webpack.dev.js"
+    "start": "webpack-dev-server --open --config=webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js"
   }
 }
