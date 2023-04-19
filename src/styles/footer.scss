@@ -1,99 +1,99 @@
 .footer {
-    background-color: $dark_1;
-    width: 100%;
-    flex-shrink: 0;
+	background-color: $dark_1;
+	width: 100%;
+	flex-shrink: 0;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: pxToRem(80);
-        padding: 0 pxToRem(5);
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: pxToRem(80);
+		padding: 0 pxToRem(5);
 
-        @media (max-width: $pc) {
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+		@media (max-width: $pc) {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
 
-        @media (min-width: $tablet) {
-            align-items: center;
-        }
+		@media (min-width: $tablet) {
+			align-items: center;
+		}
 
-        @media (max-width: $tablet) {
-            flex-direction: column;
-            justify-content: center;
-            gap: pxToRem(5);
-            flex-wrap: wrap;
-        }
-    }
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			justify-content: center;
+			gap: pxToRem(5);
+			flex-wrap: wrap;
+		}
+	}
 
-    &__copyright {
-        color: $white;
-        font-size: adaptiveFont(13, 12);
-        line-height: pxToRem(16);
-        letter-spacing: 0em;
-        text-align: left;
-        display: flex;
-        align-items: center;
-    }
+	&__copyright {
+		color: $white;
+		font-size: adaptiveFont(13, 12);
+		line-height: pxToRem(16);
+		letter-spacing: 0em;
+		text-align: left;
+		display: flex;
+		align-items: center;
+	}
 
-    &__contacts {
-        display: flex;
-    }
+	&__contacts {
+		display: flex;
+	}
 
-    &__contacts-list,
-    &__payments-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: pxToRem(10) 0;
-        padding: 0;
+	&__contacts-list,
+	&__payments-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: pxToRem(10) 0;
+		padding: 0;
 
-        @media (max-width: $tablet) {
-            flex-direction: column;
-            gap: pxToRem(5);
-        }
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			gap: pxToRem(5);
+		}
 
-        @media (min-width: $tablet) {
-            gap: pxToRem(38);
-        }
-    }
+		@media (min-width: $tablet) {
+			gap: pxToRem(38);
+		}
+	}
 
-    &__payments-list {
-        @media (min-width: $tablet) {
-            border-left: pxToRem(1) solid $light_2;
-            border-right: pxToRem(1) solid $light_2;
-            padding: 0 pxToRem(38);
-        }
+	&__payments-list {
+		@media (min-width: $tablet) {
+			border-left: pxToRem(1) solid $light_2;
+			border-right: pxToRem(1) solid $light_2;
+			padding: 0 pxToRem(38);
+		}
 
-        @media (max-width: $pc) {
-            border: none;
-        }
-    }
+		@media (max-width: $pc) {
+			border: none;
+		}
+	}
 
-    &__payments-list-item,
-    &__contacts-list-item {
-        display: flex;
-        gap: pxToRem(10);
-        align-items: center;
-        color: $light_2;
-    }
+	&__payments-list-item,
+	&__contacts-list-item {
+		display: flex;
+		gap: pxToRem(10);
+		align-items: center;
+		color: $light_2;
+	}
 
-    &__payments-list-item {
-        color: $light_2;
-    }
+	&__payments-list-item {
+		color: $light_2;
+	}
 
-    &__contacts-list-item {
-        @media (min-width: $tablet) {
-            padding: 0;
-        }
-    }
+	&__contacts-list-item {
+		@media (min-width: $tablet) {
+			padding: 0;
+		}
+	}
 
-    &__contacts-link {
-        font-size: adaptiveFont(13, 12);
-        line-height: pxToRem(16);
-        letter-spacing: 0em;
-        text-align: left;
-        color: $white;
-    }
+	&__contacts-link {
+		font-size: adaptiveFont(13, 12);
+		line-height: pxToRem(16);
+		letter-spacing: 0em;
+		text-align: left;
+		color: $white;
+	}
 }

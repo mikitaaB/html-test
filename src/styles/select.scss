@@ -1,97 +1,97 @@
 .select-system {
-    position: relative;
-    margin: 0 auto;
-    min-width: pxToRem(370);
+	position: relative;
+	margin: 0 auto;
+	min-width: pxToRem(370);
 
-    &[data-state="active"] {
-        background-color: $dark_1;
-        color: $white;
+	&[data-state="active"] {
+		background-color: $dark_1;
+		color: $white;
 
-        .select-system__title {
-            &::before {
-                transform: translate(-3px, -50%) rotate(-45deg);
-                background-color: $white;
-            }
+		.select-system__title {
+			&::before {
+				transform: translate(-3px, -50%) rotate(-45deg);
+				background-color: $white;
+			}
 
-            &::after {
-                transform: translate(3px, -50%) rotate(45deg);
-                background-color: $white;
-            }
-        }
+			&::after {
+				transform: translate(3px, -50%) rotate(45deg);
+				background-color: $white;
+			}
+		}
 
-        .select-system__body {
-            opacity: 1;
-        }
+		.select-system__body {
+			opacity: 1;
+		}
 
-        .select-system__label+.select-system__input+.select-system__label {
-            max-height: 40px;
-            border-top-width: 1px;
-        }
-    }
+		.select-system__label+.select-system__input+.select-system__label {
+			max-height: 40px;
+			border-top-width: 1px;
+		}
+	}
 }
 
 .select-system__title {
-    cursor: pointer;
+	cursor: pointer;
 
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: pxToRem(16);
-        display: block;
-        width: pxToRem(10);
-        height: pxToRem(2);
-        background-color: $dark_2;
-        transition: all 0.3s ease-out;
-        transform: translate(-3px, -50%) rotate(45deg);
-    }
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: pxToRem(16);
+		display: block;
+		width: pxToRem(10);
+		height: pxToRem(2);
+		background-color: $dark_2;
+		transition: all 0.3s ease-out;
+		transform: translate(-3px, -50%) rotate(45deg);
+	}
 
-    &::after {
-        transform: translate(pxToRem(3), -50%) rotate(-45deg);
-    }
+	&::after {
+		transform: translate(pxToRem(3), -50%) rotate(-45deg);
+	}
 }
 
 .select-system__body {
-    position: absolute;
-    top: pxToRem(40);
-    left: pxToRem(3);
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - pxToRem(6));
-    background-color: $dark_3;
-    border: pxToRem(1) solid $dark_1;
-    border-top: none;
-    border-bottom-left-radius: pxToRem(3);
-    border-bottom-right-radius: pxToRem(3);
+	position: absolute;
+	top: pxToRem(40);
+	left: pxToRem(3);
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - pxToRem(6));
+	background-color: $dark_3;
+	border: pxToRem(1) solid $dark_1;
+	border-top: none;
+	border-bottom-left-radius: pxToRem(3);
+	border-bottom-right-radius: pxToRem(3);
 
-    transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 
-    opacity: 0;
-    z-index: 8;
+	opacity: 0;
+	z-index: 8;
 }
 
 .select-system__input {
-    display: none;
+	display: none;
 
-    &:disabled+label {
-        opacity: 0.6;
-        pointer-events: none;
-    }
+	&:disabled+label {
+		opacity: 0.6;
+		pointer-events: none;
+	}
 }
 
 .select-system__label {
-    display: flex;
-    align-items: center;
-    height: pxToRem(40);
-    max-height: 0;
-    padding: 0 pxToRem(10);
-    color: $white;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.2s ease-out;
+	display: flex;
+	align-items: center;
+	height: pxToRem(40);
+	max-height: 0;
+	padding: 0 pxToRem(10);
+	color: $white;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
 
-    &:hover {
-        color: $light_1;
-    }
+	&:hover {
+		color: $light_1;
+	}
 }
