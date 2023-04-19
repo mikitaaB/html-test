@@ -190,6 +190,11 @@
 		border-radius: 50%;
 	}
 
+	&__image {
+		width: pxToRem(55);
+		height: pxToRem(55);
+	}
+
 	&__title {
 		color: $white;
 		font-size: pxToRem(16);
@@ -345,6 +350,11 @@
 		text-transform: uppercase;
 		padding: pxToRem(12) pxToRem(35) pxToRem(12) pxToRem(10);
 		cursor: pointer;
+	}
+
+	&__icon {
+		width: pxToRem(17);
+		height: pxToRem(20);
 	}
 }
 

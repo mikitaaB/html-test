@@ -29,7 +29,8 @@
 
 	&__copyright {
 		color: $white;
-		font-size: adaptiveFont(13, 12);
+		font-size: adaptiveFont(13, 13);
+		font-family: Lato;
 		line-height: pxToRem(16);
 		letter-spacing: 0em;
 		text-align: left;
@@ -76,7 +77,6 @@
 		display: flex;
 		gap: pxToRem(10);
 		align-items: center;
-		color: $light_2;
 	}
 
 	&__payments-list-item {
@@ -89,8 +89,14 @@
 		}
 	}
 
+	&__payments-icon,
+	&__contacts-icon {
+		width: pxToRem(20);
+		height: pxToRem(20);
+	}
+
 	&__contacts-link {
-		font-size: adaptiveFont(13, 12);
+		font-size: adaptiveFont(13, 13);
 		line-height: pxToRem(16);
 		letter-spacing: 0em;
 		text-align: left;

@@ -1,7 +1,4 @@
-const rangeSlider = document.getElementById("range-slider");
-rangeSlider.addEventListener("input", handleInputChange);
-
-function handleInputChange(e) {
+const handleInputChange = (e) => {
 	const target = e.target;
 	if (e.target.type !== "range") {
 		target = rangeSlider;
@@ -9,6 +6,9 @@ function handleInputChange(e) {
 	const rangeSpan = document.getElementById("range-span");
 	rangeSpan.textContent = target.value + "%";
 }
+
+const rangeSlider = document.getElementById("range-slider");
+rangeSlider.addEventListener("input", handleInputChange);
 
 const select = document.querySelector(".select-system");
 const selectTitle = select.querySelector(".select-system__title");
